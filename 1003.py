@@ -1,10 +1,12 @@
 import sys
 
 p0, p1 = 0, 0
-print("t값을 받습니다")
+t = -1
+while(t < 0 or t > 40):
+ print("t값을 받습니다")
 # t = input()
-t = sys.stdin.readline()
-t = int(t)
+ t = sys.stdin.readline()
+ t = int(t)
 
 def fibo(n):
     global p0, p1
