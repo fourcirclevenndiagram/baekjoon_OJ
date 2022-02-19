@@ -3,12 +3,14 @@ t = input()
 t = int(t)
 winner = []
 for i in range(0, t):
+    print("%d번째 케이스입니다"%(i+1))
     print("학교 수를 입력하세요")
     n = input()
     n = int(n)
     best = {'school':'', 'alcohol':0}
     for_comp = []
-    for j in range(0, n):
+    j = 0
+    while(j < n):
         same = 0
         print("%d 번째 학교 이름과 주량을 입력하세요"%(j+1))
         school, alcohol = input().split()
@@ -19,14 +21,17 @@ for i in range(0, t):
                 if(for_comp[comp] == alcohol):
                     same += 1
                     break
+        j += 1
         if(same > 0):
-            j -= 1
-            continue
+            # print("같은 주량의 학교가 있습니다! 재입력해주세요")
+            j -= 1            
 
-        if(alcohol > best['alcohol']):
+        if(same == 0 and alcohol > best['alcohol']):
             best['school'] = school
             best['alcohol'] = alcohol
+        
     winner.append(best['school'])
 for i in range(0, t):
     print(winner[i])
+
     
