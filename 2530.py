@@ -1,0 +1,6 @@
+a, b, c = input().split()
+a, b, c = int(a), int(b), int(c)
+d = input()
+d = int(d)
+after_cooking = ((a+((b*60+c+d)//3600))%24, b+((c+d)//60)%60, (c+d)%60)
+print(after_cooking[0], after_cooking[1], after_cooking[2])
