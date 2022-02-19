@@ -1,0 +1,5 @@
+a, b = input().split()
+a, b = int(a), int(b)
+m = abs(a//4 - b//4)
+n = abs(a%4 - b%4)
+print(m+n)
