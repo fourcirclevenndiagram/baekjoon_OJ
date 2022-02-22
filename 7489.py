@@ -12,3 +12,5 @@ for i in range(0, t):
     ans.append(n)
 for i in range(0, t):
     print(int(ans[i]%10))
+
+# 런타임 에러 (OverflowError)
