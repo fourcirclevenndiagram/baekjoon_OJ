@@ -12,8 +12,8 @@ for i in range(0, t):
         n *= j
         if(n%10 == 0):
             n /= 10     
-    ans.append(n)
+    ans.append(int(n))
 for i in range(0, t):
-    print(int(ans[i]%10))
+    print(ans[i]%10)
 
-# 런타임 에러 (ValueError)
+# 런타임 에러 (OverflowError)
