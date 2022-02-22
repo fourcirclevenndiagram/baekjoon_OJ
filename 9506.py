@@ -9,7 +9,7 @@ while(1):
     i = 2
     drawer = []
     drawer.append(1)
-    if(n == 1):
+    if(n == 1):        
         print("1 is NOT perfect")
         continue
     while(i < n):

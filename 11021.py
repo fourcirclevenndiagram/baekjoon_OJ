@@ -7,3 +7,5 @@ for i in range(0, t):
     case.append(a+b)
 for j in range(0, t):
     print("Case #%d: %d"%(j+1, case[j]))
+
+# Clear

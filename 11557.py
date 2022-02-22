@@ -1,10 +1,10 @@
-print("테스트 케이스 수를 입력하세요")
+# print("테스트 케이스 수를 입력하세요")
 t = input()
 t = int(t)
 winner = []
 for i in range(0, t):
-    print("%d번째 케이스입니다"%(i+1))
-    print("학교 수를 입력하세요")
+    # print("%d번째 케이스입니다"%(i+1))
+    # print("학교 수를 입력하세요")
     n = input()
     n = int(n)
     best = {'school':'', 'alcohol':0}
@@ -12,7 +12,7 @@ for i in range(0, t):
     j = 0
     while(j < n):
         same = 0
-        print("%d 번째 학교 이름과 주량을 입력하세요"%(j+1))
+        # print("%d 번째 학교 이름과 주량을 입력하세요"%(j+1))
         school, alcohol = input().split()
         alcohol = int(alcohol)
         for_comp.append(alcohol)
@@ -34,4 +34,5 @@ for i in range(0, t):
 for i in range(0, t):
     print(winner[i])
 
-    
+# Clear
+# 안내 멘트를 print 하는 코드를 넣으면 '출력 초과'로 실패

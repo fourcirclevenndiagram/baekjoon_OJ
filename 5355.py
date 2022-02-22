@@ -12,4 +12,3 @@ for i in range(0, t):
         elif(a[j] == '#'):
             a[0] -= 7
     print("%.2f"%a[0])
-

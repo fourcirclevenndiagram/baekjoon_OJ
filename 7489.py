@@ -10,9 +10,7 @@ for i in range(0, t):
         break
     for j in range(1, n):
         n *= j
-        if(n%10 == 0):
-            n /= 10     
-    ans.append(int(n))
+        
 for i in range(0, t):
     print(ans[i]%10)
 

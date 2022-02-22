@@ -6,12 +6,11 @@ while(i < 3):
     a, b = input().split()
     a, b = int(a), int(b)
     gsb = b/a    
-    if(i > 0 and gsb == pre_gsb):
-        i -= 1
-        continue
+    # if(i > 0 and gsb == pre_gsb):
+    #     i -= 1
     if(gsb > pre_gsb):
         best_gsb = i
-    pre_gsb = gsb    
+    pre_gsb = gsb
     i += 1
 if(best_gsb == 0):
     print('S')

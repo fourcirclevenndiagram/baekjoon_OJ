@@ -39,10 +39,8 @@ for i in range(0, mh):
         M += 1
     else:
         break
-
-        
-print(E, M, H)
-print(em, mh, proper_num)
+ 
+print(E, em, M, mh, H, proper_num)
 # 대회에 사용할 문제를 배분
 while(E > 0 and M > 0 and H > 0):
     E -= 1

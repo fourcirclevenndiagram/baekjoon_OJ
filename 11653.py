@@ -1,6 +1,3 @@
-from re import I
-
-
 a = input()
 a = int(a)
 while(a != 1):
