@@ -11,3 +11,5 @@ for i in range(max_cnt):
     if(flag):
         print(ans)
         break
+if(not flag):
+    print(-1)
