@@ -9,6 +9,5 @@ b = ''.join(b)
 a, b = int(a), int(b)
 if(a < b):
     print(b)
-elif(b > a):
+elif(a > b):
     print(a)
-print(a, b, a<b, a>b)

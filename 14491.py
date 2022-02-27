@@ -10,11 +10,18 @@ while(1):
         if(n > C):
             i += 1
             continue
-        C /= 9
         
+        C /= 9
+        temp = n//C**i
+        n -= temp*(C**i)
+        temp = str(temp)
+        ans.append(temp)
+        i = 0
+        if(n == 0):
+            break
+               
 
-
-ans.append(str(n))
+# ans.append(str(n))
 ans = ''.join(ans)
 ans = int(ans)
 print(ans)

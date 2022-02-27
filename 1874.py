@@ -13,6 +13,7 @@ for i in range(n):
         action.append('+')
     if(my_stack[len(my_stack)-1] == n):
         my_stack.pop()
+        action.append('-')
     else:
         flag = 1
         break
