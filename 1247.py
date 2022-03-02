@@ -1,5 +1,7 @@
+import sys
+
 for i in range(0, 3):
-    n = int(input())
+    n = int(sys.stdin.readline())
     tot = 0
     for j in range(0, n):
         temp = int(input())
