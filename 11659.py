@@ -10,15 +10,15 @@ for i in range(m):
     print(tot)
 '''
 import sys
-n, m = map(int, input().split())
+n, m = map(int, sys.stdin.readline().split())
 
-drawer = list(map(int, input().split()))
+drawer = list(map(int, sys.stdin.readline().split()))
 new_drawer = [0]
 tot = 0  
 
-for i in range(0, n):
-    tot += drawer[i]
+for i in drawer:
+    tot += i
     new_drawer.append(tot)
-for i in range(0, m):
-    a, b = map(int, input().split())
+for i in range(m):
+    a, b = map(int, sys.stdin.readline().split())
     print(new_drawer[b] - new_drawer[a-1])
