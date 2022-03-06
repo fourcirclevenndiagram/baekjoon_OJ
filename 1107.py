@@ -1,26 +1,22 @@
 n = int(input())
 m = int(input())
-broken_button = map(int, input().split())
+if(m > 0):
+    broken_button = set(map(int, input().split()))
+else:
+    broken_button = set()
+min_push_button = (100 - n)
+if(min_push_button < 0):
+    min_push_button = -min_push_button
 
-cur_channel = 100
-push_button = 0
-button_stack = []
-def push_plus():
-    global cur_channel
-    cur_channel += 1
-def push_minus():
-    global cur_channel
-    cur_channel -= 1
-def push_num(num):
-    global cur_channel
-    button_stack.append(str(num))
-    
-while(cur_channel != n):
-    if(n > cur_channel):
-        push_plus()
-        push_button += 1
-    elif(n < cur_channel):
-        push_minus()
-        push_button += 1
+for i in range(0, 1000001):
+    i = str(i)
+    for j in range(len(i)):
+        if(int(i[j]) in broken_button):
+            break
+        elif(j == len(i)-1):
+            temp = int(i) - n
+            if(temp < 0):
+                temp = -temp
+            min_push_button = min(min_push_button, temp + len(i))
 
-print(push_button)
+print(min_push_button)
