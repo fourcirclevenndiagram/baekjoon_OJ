@@ -9,7 +9,8 @@ temp = []
 flag = 0
 while(1):
     s.append('A')
-    print(s)
+    if(len(s) > 999 or len(t) > 1000):
+        break
     if(s == t):
         flag += 1
         break
@@ -18,13 +19,12 @@ while(1):
     s = temp
     temp = []
     s.append('B')
-    print(s)
+    if(len(s) > 999 or len(t) > 1000):
+        break
     if(s == t):
         flag += 1
         break    
-    if(len(s) > 999 or len(t) > 1000):
-        break
-    print(s)
+
 if(flag):
     print(1)
 else:

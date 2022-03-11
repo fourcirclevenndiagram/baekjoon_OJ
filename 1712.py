@@ -1,5 +1,6 @@
-a, b, c = input().split()
-a, b, c = int(a), int(b), int(c)
+'''
+import sys
+a, b, c = map(int, sys.stdin.readline().split())
 i = 0
 fail = 0
 if(b > c):
@@ -19,3 +20,10 @@ else:
     print(i)
 
 # 시간초과
+'''
+import sys
+a, b, c = map(int, sys.stdin.readline().split())
+if(b >= c):
+    print(-1)
+else:
+    print(int(a/(c-b)+1))
