@@ -1,3 +1,4 @@
+'''
 import sys
 
 p0, p1 = 0, 0
@@ -28,4 +29,21 @@ for i in range(0, t):
     m = sys.stdin.readline()
     m = int(m)
     fibo(m)
+    print(p0, p1)
+'''
+
+import sys
+t = int(sys.stdin.readline())
+
+for i in range(t):
+    a = int(input())
+    p0, p1 = 0, 1
+    if(a == 0):
+        print("1 0")
+        continue
+    elif(a == 1):
+        print("0 1")
+        continue
+    for j in range(a-1):
+        p0, p1 = p1, p0+p1
     print(p0, p1)
