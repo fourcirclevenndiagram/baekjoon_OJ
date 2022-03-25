@@ -1,5 +1,7 @@
+import math
 n = int(input())
-i = 0
-while(i**2 < n):
-    i += 1
-print(i)
+ans = int(math.sqrt(n))
+if(ans**2 == n):
+    print(ans)
+else:
+    print(ans+1)
