@@ -1,7 +1,8 @@
-n = int(input())
+import sys
+n = int(sys.stdin.readline())
 log = []
 for i in range(n):
-    temp = input().split()
+    temp = sys.stdin.readline().split()
     log.append(temp)
 
 office = []
