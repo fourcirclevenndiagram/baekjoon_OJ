@@ -11,6 +11,7 @@ for i in log:
         office.append(i[0])
     elif(i[1] == 'leave'):
         office.remove(i[0])
-office.sort(reverse=True)
-for i in office:
+# office.sort(reverse=True)
+ans = sorted(office, reverse=True)
+for i in ans:
     print(i)
