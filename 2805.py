@@ -12,13 +12,13 @@ start, end = max(trees), 0
 #         flag = 1
 #         break
 #     axe -= 1
-while(start > end):
+while(start >= end):
     mid = (start+end) // 2
     cut_tree = 0
     for i in trees:
         if(i > mid):
             cut_tree += (i - mid)
-    if(cut_tree > m):
+    if(cut_tree >= m):
         end = mid+1
     else:
         start = mid-1
