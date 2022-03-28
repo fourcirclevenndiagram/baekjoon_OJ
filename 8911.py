@@ -44,8 +44,8 @@ for i in range(t):
                 direction = 'North'
         max_x = max(max_x, pos[0])
         max_y = max(max_y, pos[1])
-        min_x = min(max_x, pos[0])
-        min_x = min(max_x, pos[1])
+        min_x = min(min_x, pos[0])
+        min_x = min(min_x, pos[1])
         print(pos, direction)
     range_x = max_x - min_x
     range_y = max_y - min_y
