@@ -12,7 +12,7 @@ for i in range(m, n+1):
         if(not flag):
             prime_num.append(i)
 
-if(flag):
+if(len(prime_num) == 0):
     print(-1)
 else:
     for i in prime_num:
