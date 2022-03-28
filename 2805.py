@@ -23,3 +23,4 @@ while(start >= end):
     else:
         start = mid-1
 print(start)
+# pypy로 했더니 정답됨
