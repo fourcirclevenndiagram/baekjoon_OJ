@@ -1,3 +1,5 @@
+import sys
+input = sys.stdin.readline
 n, m = map(int, input().split())
 trees = list(map(int, input().split()))
 start = max(trees)
@@ -12,4 +14,4 @@ while(1):
         flag = 1
         break
     axe -= 1
-print(axe)
+print(axe+1)
