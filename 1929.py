@@ -9,6 +9,8 @@ for i in range(m, n+1):
             break
     if(not flag):
         prime_lst.append(i)
+if(prime_lst[0] == 1):
+    prime_lst.pop(0)
 for i in prime_lst:
     print(i)
     
