@@ -1,8 +1,6 @@
 a = int(input())
 b = int(input())
-ans = 0
-for i in range(a):
-    if(ans*2 + b == a):
-        break
-    ans += 1
-print(ans+b, ans)
+mid1 = a//2
+mid2 = b//2
+print(int(mid1+mid2))
+print(int(mid1-mid2))
