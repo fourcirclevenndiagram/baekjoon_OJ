@@ -10,7 +10,10 @@ while(1):
     drawer = []
     drawer.append(1)
     if(n == 1):        
-        print("1 is NOT perfect")
+        print("1 is NOT perfect.")
+        continue
+    if(n == 0):
+        print("0 is NOT perfect.")
         continue
     while(i < n):
         if(n % i == 0):
@@ -22,7 +25,7 @@ while(1):
         tot += drawer[i]
     if(n != tot):
         # print("%d is NOT perfect"%k)
-        ans += "%d is NOT perfect"%k
+        ans += "%d is NOT perfect."%k
     elif(n == tot):
         # print("%d = "%tot, end='')
         ans += "%d = "%tot
