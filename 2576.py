@@ -7,5 +7,3 @@ for i in range(7):
         the_sum += a
 print(the_sum)
 print(min(odds))
-    
-    
